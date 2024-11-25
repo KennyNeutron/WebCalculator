@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Calculator</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="calculator.png" />
   </head>
   <body>
-    <h2>Web Calculator</h2>
-    <h3>By Kenny Neutron</h3>
+    <div id="header_main">
+      <img src="calculator.png" id="img_calculator" />
+      <div id="header_text">
+        <h2 id="AppTitle">Web Calculator</h2>
+        <h3>By Kenny Neutron</h3>
+      </div>
+    </div>
 
     <div id="container_main_calculator">
       <input id="display" readonly />
@@ -98,7 +104,7 @@
             <button
               id="equal_button"
               class="button_operator"
-              onclick="appendToDisplay('=')"
+              onclick="Calculate()"
             >
               =
             </button>

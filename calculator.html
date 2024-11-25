@@ -34,7 +34,7 @@
 
         <div id="button_container_row2and3">
           <div id="button_container_row23">
-            <div id="button_container_row2">
+            <div class="button_container3">
               <button class="button_regular" onclick="appendToDisplay('7')">
                 7
               </button>
@@ -45,7 +45,7 @@
                 9
               </button>
             </div>
-            <div id="button_container_row3">
+            <div class="button_container3">
               <button class="button_regular" onclick="appendToDisplay('4')">
                 4
               </button>
@@ -68,15 +68,44 @@
           </div>
         </div>
 
-        <button onclick="appendToDisplay('1')">1</button>
-        <button onclick="appendToDisplay('2')">2</button>
-        <button onclick="appendToDisplay('3')">3</button>
-        <button onclick="appendToDisplay('0')">0</button>
-        <button onclick="appendToDisplay('.')">.</button>
-        <button onclick="appendToDisplay('=')">=</button>
+        <div id="button_container_row4and5">
+          <div id="button_container_row45">
+            <div class="button_container3">
+              <button class="button_regular" onclick="appendToDisplay('1')">
+                1
+              </button>
+              <button class="button_regular" onclick="appendToDisplay('2')">
+                2
+              </button>
+              <button class="button_regular" onclick="appendToDisplay('3')">
+                3
+              </button>
+            </div>
+            <div class="button_container3">
+              <button
+                id="zero_button"
+                class="button_regular"
+                onclick="appendToDisplay('0')"
+              >
+                0
+              </button>
+              <button class="button_regular" onclick="appendToDisplay('.')">
+                .
+              </button>
+            </div>
+          </div>
+          <div id="button_container_equalbutton">
+            <button
+              id="equal_button"
+              class="button_operator"
+              onclick="appendToDisplay('=')"
+            >
+              =
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-
-    <script sr="calc.js"></script>
+    <script src="calc.js"></script>
   </body>
 </html>

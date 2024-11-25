@@ -36,14 +36,39 @@
   gap: 30px;
 }
 
-#button_container_row23 {
-  width: 530px;
-  margin: 20px;
+#button_container_row2and3 {
+  width: 600;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+}
+
+#button_container_addButton {
+  width: 130px;
+  display: flex;
+  justify-content: center;
+}
+
+#button_container_row23 {
+  width: 450;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#button_container_row2 {
+  display: flex;
+  gap: 30px;
+}
+
+#button_container_row3 {
+  display: flex;
+  gap: 30px;
+}
+
+#button_container_addbutton {
+  width: 150;
 }
 
 .button_regular {
@@ -101,4 +126,8 @@
 .button_operator:active {
   background: linear-gradient(to bottom, #6789c9, #4567b7);
   box-shadow: 0 5px 10px rgba(255, 255, 255, 0.8);
+}
+
+#add_button {
+  height: 220px;
 }

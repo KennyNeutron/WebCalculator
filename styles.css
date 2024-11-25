@@ -1,15 +1,20 @@
 #container_main_calculator {
   width: 600px;
   height: 800px;
-  background: black;
-  display: block;
+  background: linear-gradient(to bottom, #0f0f14, #3f3e3e);
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  border-radius: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 3%;
 }
 
 #display {
-  width: 550px;
+  width: 500px;
   height: 100px;
+  margin-top: 50px;
+  margin-bottom: 30px;
   font-size: 24px;
   font-family: monospace;
   text-align: right;
@@ -19,34 +24,31 @@
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #f0f0f0;
   color: #333;
-
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 #button_container_row1 {
+  width: 530px;
+  margin: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
-  margin: 20px;
-  width: 550px;
+  gap: 30px;
 }
 
 #button_container_row23 {
-  width: 550px;
+  width: 530px;
+  margin: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
-  margin: 20px;
+  gap: 30px;
 }
 
 .button_regular {
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
   background: linear-gradient(to bottom, #4567b7, #2f4d7f);
   border: 1px solid #ccc;
   border-radius: 30px;
@@ -78,8 +80,8 @@
 }
 
 .button_operator {
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
   background: linear-gradient(to bottom, #ffc499, #ffa07a);
   border: 1px solid #ccc;
   border-radius: 30px;

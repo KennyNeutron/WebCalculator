@@ -4,29 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Calculator</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h2>Web Calculaor</h2>
+    <h2>Web Calculator</h2>
     <h3>By Kenny Neutron</h3>
 
     <div id="container_main_calculator">
       <input id="display" readonly />
       <div id="div_container_buttons">
+        <div id="button_container_row1">
+          <button
+            class="button_regular"
+            id="clear_button"
+            onclick="appendToDisplay('c')"
+          >
+            C
+          </button>
+          <button class="button_operator" onclick="appendToDisplay('/')">
+            /
+          </button>
+          <button class="button_operator" onclick="appendToDisplay('*')">
+            x
+          </button>
+          <button class="button_operator" onclick="appendToDisplay('-')">
+            -
+          </button>
+        </div>
+
+        <div id="button_container_row23">
+          <button class="button_regular" onclick="appendToDisplay('7')">
+            7
+          </button>
+          <button class="button_regular" onclick="appendToDisplay('8')">
+            8
+          </button>
+          <button class="button_regular" onclick="appendToDisplay('9')">
+            9
+          </button>
+          <button class="button_regular" onclick="appendToDisplay('+')">
+            +
+          </button>
+        </div>
+
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
         <button onclick="appendToDisplay('1')">1</button>
-        <button onclick="appendToDisplay('1')">1</button>
-        <button onclick="appendToDisplay('1')">1</button>
-        <button onclick="appendToDisplay('1')">1</button>
-        <button onclick="appendToDisplay('1')">1</button>
-        <button onclick="appendToDisplay('1')">1</button>
-        <button onclick="appendToDisplay('1')">1</button>
-        <button onclick="appendToDisplay('1')">1</button>
-        <button onclick="appendToDisplay('1')">1</button>
-        <button onclick="appendToDisplay('1')">1</button>
-        <button onclick="appendToDisplay('1')">1</button>
-        <button onclick="appendToDisplay('1')">1</button>
-        <button onclick="appendToDisplay('1')">1</button>
-        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="appendToDisplay('=')">=</button>
       </div>
     </div>
 
